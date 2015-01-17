@@ -1,5 +1,0 @@
-I:\Projects\TwitterPrototype\TwitterPrototype.Entities\bin\Debug\TwitterPrototype.Entities.dll
-I:\Projects\TwitterPrototype\TwitterPrototype.Entities\bin\Debug\TwitterPrototype.Entities.pdb
-I:\Projects\TwitterPrototype\TwitterPrototype.Entities\obj\Debug\TwitterPrototype.Entities.dll
-I:\Projects\TwitterPrototype\TwitterPrototype.Entities\obj\Debug\TwitterPrototype.Entities.pdb
-I:\Projects\TwitterPrototype\TwitterPrototype.Entities\obj\Debug\TwitterPrototype.Entities.csprojResolveAssemblyReference.cache
