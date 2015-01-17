@@ -1,0 +1,1 @@
+/// <reference path="../Scripts/typings/tsd.d.ts" />

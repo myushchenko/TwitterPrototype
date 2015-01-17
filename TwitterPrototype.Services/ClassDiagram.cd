@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Services Layer">
+    <Position X="7.583" Y="7.24" Height="0.312" Width="2.231" />
+  </Comment>
+  <Comment CommentText="Entities Layer">
+    <Position X="7.563" Y="0.521" Height="0.312" Width="2.408" />
+  </Comment>
+  <Comment CommentText="DataBase Context">
+    <Position X="7.573" Y="4.677" Height="0.312" Width="2.335" />
+  </Comment>
+  <Class Name="TwitterPrototype.Entities.EntityBase" Collapsed="true">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TwitterPrototype.Entities.Follow">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="TwitterPrototype.Entities.Post">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="TwitterPrototype.Entities.User">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="TwitterPrototype.Services.TwitterService">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAQAAAEAIAQAAAAQAAAIAAAAAAAAAAAEgAIE=</HashCode>
+      <FileName>TwitterService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TwitterPrototype.Data.TwitterContext">
+    <Position X="0.5" Y="4.75" Width="3" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="TwitterPrototype.Entities.IEntity" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="TwitterPrototype.Services.ITwitterService" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAEAAAQAAAAAAAAIAAAAAAAAAAAEgAIE=</HashCode>
+      <FileName>ITwitterService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

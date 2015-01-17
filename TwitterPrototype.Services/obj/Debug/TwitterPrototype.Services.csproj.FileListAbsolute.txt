@@ -1,0 +1,11 @@
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\bin\Debug\TwitterPrototype.Services.dll
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\bin\Debug\TwitterPrototype.Services.pdb
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\bin\Debug\TwitterPrototype.Data.dll
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\bin\Debug\TwitterPrototype.Entities.dll
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\bin\Debug\EntityFramework.dll
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\bin\Debug\TwitterPrototype.Data.pdb
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\bin\Debug\TwitterPrototype.Entities.pdb
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\bin\Debug\EntityFramework.xml
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\obj\Debug\TwitterPrototype.Services.csprojResolveAssemblyReference.cache
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\obj\Debug\TwitterPrototype.Services.dll
+I:\Projects\TwitterPrototype\TwitterPrototype.Services\obj\Debug\TwitterPrototype.Services.pdb

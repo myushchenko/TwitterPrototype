@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/services/dto.js"></script>
+    <script src="app/services/endpointService.js"></script>
+    <script src="app/controllers/homeController.js"></script>
+
+</head>
+<body ng-app="App">
+
+    <div ng-controller="HomeController as ctrl">
+        <form>
+            <input ng-model="ctrl.userName" />
+            <button type="submit" ng-click="ctrl.onCreateUser()">Create user</button>
+        </form>
+        <br />
+        
+        <div ng-show="ctrl.users.length>0">
+            Users:<select ng-model="ctrl.currentUser"
+                          ng-options="user as user.name for user in ctrl.users" ng-change="ctrl.onChangeUser()"></select>
+        </div>
+       
+        <div ng-show="ctrl.currentUser" style="padding-top: 10px;">
+            <span>Current User:</span>
+            <b ng-bind="ctrl.currentUser.name"></b>
+
+            <div style="padding: 10px 0">
+                <ul>
+                    <li ng-repeat="follow in ctrl.follows" ng-show="!follow.isFollowed">
+                        {{ follow.userName }}
+                        <a href="#" ng-click="ctrl.onFollow(follow)">Follow</a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div ng-show="ctrl.isShowFollowed">
+                <b>Followed users:</b>
+                <ul>
+                    <li ng-repeat="follow in ctrl.follows" ng-show="follow.isFollowed">
+                        {{ follow.userName }}
+                        <a href="#" ng-click="ctrl.onUnFollow(follow)">Unfollow</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="padding: 10px 0">
+                <textarea rows="5" cols="30" ng-model="ctrl.message" placeholder="Message"></textarea>
+                <br />
+                <button ng-click="ctrl.onPostMessage()">Post Message</button>
+            </div>
+
+            <a href="#" ng-click="ctrl.onGetFeed()">Get Feed</a>
+            <a href="#" ng-click="ctrl.onGetGlobalFeed()">Get Global Feed</a>
+
+            <div ng-show="ctrl.posts">
+                <ul>
+                    <li ng-repeat="post in ctrl.posts">
+                        {{ post.message }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
