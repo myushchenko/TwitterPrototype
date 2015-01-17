@@ -36,7 +36,15 @@ namespace TwitterPrototype.Services
         }
         public IList<Post> GetFeed(int userId)
         {
-            return this._postRepository.FindBy(t => t.UserId == userId).ToList();
+            var result = new List<Post>(); 
+            result.AddRange(this._postRepository.FindBy(t => t.UserId == userId).ToList());
+
+            foreach (var followedUser in GetFollowed(userId))
+            {
+                result.AddRange(this._postRepository.FindBy(t => t.UserId == followedUser.FollowedUserId).ToList());
+            }
+
+            return result;
         }
         public IList<Post> GetGlobalFeed()
         {
